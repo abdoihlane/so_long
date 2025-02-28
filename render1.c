@@ -6,7 +6,7 @@
 /*   By: ahabibi- <ahabibi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 18:34:09 by ahabibi-          #+#    #+#             */
-/*   Updated: 2025/02/28 02:40:30 by ahabibi-         ###   ########.fr       */
+/*   Updated: 2025/02/28 13:55:35 by ahabibi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	validimagesornot(t_game *game)
 		tfi_zmer(game);
 	if (!game->exit_img)
 		tfi_zmer(game);
-	if (!game->exit_img)
+	if (!game->wall_img)
 		tfi_zmer(game);
 	if (!game->empty_img)
 		tfi_zmer(game);
