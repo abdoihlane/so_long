@@ -6,7 +6,7 @@
 /*   By: ahabibi- <ahabibi-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 18:38:44 by ahabibi-          #+#    #+#             */
-/*   Updated: 2025/02/28 02:10:37 by ahabibi-         ###   ########.fr       */
+/*   Updated: 2025/02/28 16:27:43 by ahabibi-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,11 @@ void	flood_fill(t_game *game, int y, int x)
 	if (game->map_copy[y][x] == 'C')
 		game->collected_coins_f++;
 	else if (game->map_copy[y][x] == 'E')
+		{
 		game->exit_found = 1;
+		return;
+		}
+	// if(game->map_copy[y][x] != 'E')
 	game->map_copy[y][x] = 'V';
 	flood_fill(game, y, x - 1);
 	flood_fill(game, y + 1, x);
